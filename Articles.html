@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/necosmic-2" rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+<body>
+    <body>
+        <div class="header2">
+            <div class="header-container">
+                <div class="date-time" id="dateTime"></div> <H1 id="gayporn">Ayusshdussani.com</H1>
+                <nav class="nav-links">
+                    <a href="coverpage.html">Home</a>
+                    <a href="Gallery.html">&MediumSpace; Gallery &MediumSpace;</a>
+                    <a href="Articles.html">Articles</a>
+                </nav>
+            </div>
+        </div>
+        <hr>
+        <hr>
+     </body>
+     
+        <script>
+            function updateDateTime() {
+                const now = new Date();
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+                document.getElementById('dateTime').textContent = now.toLocaleDateString('en-US', options);
+            }
+            updateDateTime();
+        </script>
+    <h1>Select an Article</h1>
+    <div class="article">
+        <a href="index.html">
+            <img src="Picture1.jpg" alt="Article 1" style="border-radius: 10px;">
+            <p>Apple Might Go Bankrupt</p>
+        </a>
+    </div>
+    <div class="article">
+        <a href="page2.html">
+            <img src="The Kraken Screenshot Nov 27 2020.png.webp" alt="Article 2">
+            <p>The Kraken</p>
+            <meta name="coppyright" content="Ayussh Dussani">
+        </a>
+    </div>
+</body>
+</html>
